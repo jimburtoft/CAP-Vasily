@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <!--WaldoAir Mission Plan05/28/2019-->
+  <Document>
+    <name>Waldo_FCS Mission Plan</name>
+    <coverageType>Polygon</coverageType>
+    <Style id="redOutlinedPolygon">
+      <LineStyle>
+        <color>641400FF</color>
+        <width>1</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>641400FF</color>
+        <fill>0</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="sn_ylw-pushpin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+        </Icon>
+        <hotSpot x="20" y="2" xunits="2" yunits="pixels" />
+      </IconStyle>
+    </Style>
+    <StyleMap id="msn_ylw-pushpin" />
+    <Style id="evenMsnNumberEvenSet">
+      <LineStyle>
+        <color>64F02814</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="oddMsnNumberEvenSet">
+      <LineStyle>
+        <color>64F0FF14</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="evenMsnNumberOddSet">
+      <LineStyle>
+        <color>6400FF14</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="oddMsnNumberOddSet">
+      <LineStyle>
+        <color>6414F0FA</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="greyline">
+      <LineStyle>
+        <color>64464646</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="whiteLine">
+      <LineStyle>
+        <color>64FFFFFF</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="blueLine">
+      <LineStyle>
+        <color>64F01E14</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="redLine">
+      <LineStyle>
+        <color>641400FF</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Pair>
+      <key>normal</key>
+      <styleUrl>#sn_ylw-pushpin</styleUrl>
+    </Pair>
+    <Pair>
+      <key>highlight</key>
+      <styleUrl>#sh_ylw-pushpin</styleUrl>
+    </Pair>
+    <Style id="sh_ylw-pushpin">
+      <IconStyle>
+        <scale>1.3</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+        </Icon>
+        <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+      </IconStyle>
+    </Style>
+    <Style id="airports">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>York AO1</name>
+      <styleUrl>#redOutlinedPolygon</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+		-76.73636174,39.84490913,0.0 
+		-76.83187994,39.84561288,0.0 
+		-77.07134643,39.72104261,0.0 
+		-76.73180578,39.71676576,0.0 
+		-76.73636174,39.84490913,0.0 
+		</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <GroundOverlay>
+      <name>Project Map</name>
+      <visibility>0</visibility>
+      <drawOrder>10</drawOrder>
+      <LatLonAltBox>
+        <north>40.470567691608288</north>
+        <south>39.4601652465705</south>
+        <east>-76.022669853511772</east>
+        <west>-77.780482353511772</west>
+      </LatLonAltBox>
+      <Lod>
+        <minLodPixels>128</minLodPixels>
+        <maxLodPixels>-1</maxLodPixels>
+      </Lod>
+      <Icon>
+        <href>York AO1_Background\ProjectMap.png</href>
+      </Icon>
+    </GroundOverlay>
+    <Folder>
+      <name>York AO1</name>
+      <downRangePhotoSpacingMeters xmlns="">173.31236858697275</downRangePhotoSpacingMeters>
+      <crossRangeSwathWidth xmlns="">595</crossRangeSwathWidth>
+      <numberOfMissons xmlns="">2</numberOfMissons>
+      <UTMZone xmlns="">18S</UTMZone>
+      <CircleTrajectorySpeed xmlns="">0</CircleTrajectorySpeed>
+      <CircleTrajectoryAltitude xmlns="">0</CircleTrajectoryAltitude>
+      <CircleTrajectoryCamRoll xmlns="">0</CircleTrajectoryCamRoll>
+      <CircleTrajectoryBank xmlns="">0</CircleTrajectoryBank>
+      <CircleTrajectoryRadius xmlns="">0</CircleTrajectoryRadius>
+      <CircleTrajectoryCameraType xmlns="" />
+      <gridOriginUTMNorthing xmlns="">4412227.572615291</gridOriginUTMNorthing>
+      <gridOriginUTMEasting xmlns="">322465.94596686825</gridOriginUTMEasting>
+      <description><![CDATA[
+Area of Polygon: 263.7 sqKm (101.8 sqMi) <br>
+Flight Altitude: 3506 ft (AGL)  <br>
+Ground Sample Distance: 10.0cm (3.9in)  <br>
+Crossrange Swath: 0.60km (0.37mi)  <br>
+Total # Missions: 2  <br>
+______________________________________________<br>
+Total Distance over target 470.9km  (292.6mi) <br>
+Total Flight Distance with Ferry  735.6km (457.1mi)  <br>
+Average 2-way Ferry Distance  132.3km  (82.2mi) <br>
+Total Flight Time with Ferry (hr): 4.8  <br>
+Total Number of Flightlines: 24  <br>
+Total Images: 2730  <br>
+______________________________________________<br> <br>
+<b> <center>Flight Line Summary </center></b> <br><table border="1" padding="2"><tr> <td><center> Mission </center> </td> <td><center> Total Time (hr) </center> </td>
+<td><center> Time at Site (hr) </center> </td> <td><center> images </center> </td><td><center> alt (ft MSL) </center> </td></tr>
+
+<tr>
+<td><center> 0            </center></td> <td><center>        2.4  </center></td>
+<td><center>        1.7 </center></td> <td><center> 1365 </center>            </td>
+<td><center>       4200</center></td>          </tr>
+<tr>
+<td><center> 1            </center></td> <td><center>        2.4  </center></td>
+<td><center>        1.6 </center></td> <td><center> 1365 </center>            </td>
+<td><center>       4300</center></td>          </tr>
+</table>]]></description>
+      <Folder>
+        <name> Airports Used for This Plan</name>
+        <Placemark>
+          <name>Capital City Airport</name>
+          <styleUrl>#airports</styleUrl>
+          <Point>
+            <coordinates>-76.8506097,40.2177006,0</coordinates>
+          </Point>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name> Summary Images</name>
+        <GroundOverlay>
+          <name> Summary_000 </name>
+          <visibility>0</visibility>
+          <drawOrder>10</drawOrder>
+          <LatLonAltBox>
+            <north>39.930612201123</north>
+            <south>39.677409015223567</south>
+            <east>-76.64131098861003</east>
+            <west>-77.08076411361003</west>
+            <Lod>
+              <minLodPixels>128</minLodPixels>
+              <maxLodPixels>-1</maxLodPixels>
+            </Lod>
+            <Icon>
+              <href>York AO1_Background\Background_00.png</href>
+            </Icon>
+          </LatLonAltBox>
+        </GroundOverlay>
+        <GroundOverlay>
+          <name> Summary_001 </name>
+          <visibility>0</visibility>
+          <drawOrder>10</drawOrder>
+          <LatLonAltBox>
+            <north>39.867413314725489</north>
+            <south>39.613977124992928</south>
+            <east>-76.681654438579045</east>
+            <west>-77.121107563579045</west>
+            <Lod>
+              <minLodPixels>128</minLodPixels>
+              <maxLodPixels>-1</maxLodPixels>
+            </Lod>
+            <Icon>
+              <href>York AO1_Background\Background_01.png</href>
+            </Icon>
+          </LatLonAltBox>
+        </GroundOverlay>
+      </Folder>
+      <Folder>
+        <name>Mission Number 0</name>
+        <missionNumber xmlns="">0</missionNumber>
+        <numFLs xmlns="">15</numFLs>
+        <flightAltMSL xmlns="">4200</flightAltMSL>
+        <description><![CDATA[Airport: Aircraft Sales Company (unknown) <br>Ferry Time: 0.75  <br>number of Flightlines: 15  <br>Total Flightline Length (mi): 150.06  <br>Total Time-Over-Target (hr): 1.68  <br>Total Flight Time (hr): 2.44  <br>Total Images: 1365  <br>]]></description>
+      </Folder>
+      <Placemark>
+        <name> MissionPolygon_00 </name>
+        <styleUrl>#blueLine</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-76.84557643,39.84329197,0
+-76.85576258,39.83800165,0
+-76.86594714,39.83271048,0
+-76.87613012,39.82741844,0
+-76.88631152,39.82212554,0
+-76.89649133,39.81683178,0
+-76.90666956,39.81153715,0
+-76.91684621,39.80624167,0
+-76.92702128,39.80094532,0
+-76.93719476,39.79564812,0
+-76.94736667,39.79035005,0
+-76.95753699,39.78505113,0
+-76.96770573,39.77975135,0
+-76.97787289,39.77445071,0
+-76.98803847,39.76914922,0
+-76.73316016,39.76743098,0
+-76.73308960,39.77279030,0
+-76.73301905,39.77814961,0
+-76.73294850,39.78350891,0
+-76.73287796,39.78886821,0
+-76.73280742,39.79422751,0
+-76.73273689,39.79958680,0
+-76.73469033,39.80496192,0
+-76.73461996,39.81032120,0
+-76.73454959,39.81568048,0
+-76.73447923,39.82103975,0
+-76.73440887,39.82639902,0
+-76.73433852,39.83175828,0
+-76.73426817,39.83711754,0
+-76.73419783,39.84247679,0
+-76.84557643,39.84329197,0
+</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_000 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">9532.180</lengthMeters>
+        <description><![CDATA[       FlightLine Number 0 <br>        FlightLine Length 5.92 mi <br>        NumberImages 55 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.84557643,39.84329197,0   -76.73419783,39.84247679,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_001 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">10398.742</lengthMeters>
+        <description><![CDATA[       FlightLine Number 1 <br>        FlightLine Length 6.46 mi <br>        NumberImages 60 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.85576258,39.83800165,0   -76.73426817,39.83711754,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_002 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">11265.304</lengthMeters>
+        <description><![CDATA[       FlightLine Number 2 <br>        FlightLine Length 7.00 mi <br>        NumberImages 66 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.86594714,39.83271048,0   -76.73433852,39.83175828,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_003 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">12131.866</lengthMeters>
+        <description><![CDATA[       FlightLine Number 3 <br>        FlightLine Length 7.54 mi <br>        NumberImages 70 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.87613012,39.82741844,0   -76.73440887,39.82639902,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_004 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">12998.428</lengthMeters>
+        <description><![CDATA[       FlightLine Number 4 <br>        FlightLine Length 8.08 mi <br>        NumberImages 75 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.88631152,39.82212554,0   -76.73447923,39.82103975,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_005 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">13864.989</lengthMeters>
+        <description><![CDATA[       FlightLine Number 5 <br>        FlightLine Length 8.62 mi <br>        NumberImages 81 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.89649133,39.81683178,0   -76.73454959,39.81568048,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_006 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">14731.551</lengthMeters>
+        <description><![CDATA[       FlightLine Number 6 <br>        FlightLine Length 9.15 mi <br>        NumberImages 85 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.90666956,39.81153715,0   -76.73461996,39.81032120,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_007 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">15598.113</lengthMeters>
+        <description><![CDATA[       FlightLine Number 7 <br>        FlightLine Length 9.69 mi <br>        NumberImages 90 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.91684621,39.80624167,0   -76.73469033,39.80496192,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_008 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">16637.987</lengthMeters>
+        <description><![CDATA[       FlightLine Number 8 <br>        FlightLine Length 10.34 mi <br>        NumberImages 97 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.92702128,39.80094532,0   -76.73273689,39.79958680,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_009 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">17504.549</lengthMeters>
+        <description><![CDATA[       FlightLine Number 9 <br>        FlightLine Length 10.88 mi <br>        NumberImages 102 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.93719476,39.79564812,0   -76.73280742,39.79422751,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_010 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">18371.111</lengthMeters>
+        <description><![CDATA[       FlightLine Number 10 <br>        FlightLine Length 11.42 mi <br>        NumberImages 107 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.94736667,39.79035005,0   -76.73287796,39.78886821,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_011 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">19237.673</lengthMeters>
+        <description><![CDATA[       FlightLine Number 11 <br>        FlightLine Length 11.95 mi <br>        NumberImages 112 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.95753699,39.78505113,0   -76.73294850,39.78350891,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_012 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">20104.235</lengthMeters>
+        <description><![CDATA[       FlightLine Number 12 <br>        FlightLine Length 12.49 mi <br>        NumberImages 116 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.96770573,39.77975135,0   -76.73301905,39.77814961,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_013 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">20970.797</lengthMeters>
+        <description><![CDATA[       FlightLine Number 13 <br>        FlightLine Length 13.03 mi <br>        NumberImages 122 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.97787289,39.77445071,0   -76.73308960,39.77279030,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_014 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">21837.358</lengthMeters>
+        <description><![CDATA[       FlightLine Number 14 <br>        FlightLine Length 13.57 mi <br>        NumberImages 127 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.98803847,39.76914922,0   -76.73316016,39.76743098,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Folder>
+        <name>Mission Number 1</name>
+        <missionNumber xmlns="">1</missionNumber>
+        <numFLs xmlns="">9</numFLs>
+        <flightAltMSL xmlns="">4300</flightAltMSL>
+        <description><![CDATA[Airport: Aircraft Sales Company (unknown) <br>Ferry Time: 0.84  <br>number of Flightlines: 9  <br>Total Flightline Length (mi): 148.70  <br>Total Time-Over-Target (hr): 1.57  <br>Total Flight Time (hr): 2.41  <br>Total Images: 1365  <br>]]></description>
+      </Folder>
+      <Placemark>
+        <name> MissionPolygon_01 </name>
+        <styleUrl>#blueLine</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-76.99820247,39.76384687,0
+-77.00836488,39.75854366,0
+-77.01852572,39.75323959,0
+-77.02868498,39.74793467,0
+-77.03884265,39.74262890,0
+-77.04899875,39.73732227,0
+-77.05915327,39.73201479,0
+-77.06122015,39.72666606,0
+-77.07137215,39.72135757,0
+-76.73177389,39.71918105,0
+-76.73170314,39.72454040,0
+-76.73163239,39.72989976,0
+-76.73156165,39.73525911,0
+-76.73149091,39.74061845,0
+-76.73142018,39.74597779,0
+-76.73134945,39.75133713,0
+-76.73127872,39.75669646,0
+-76.73120800,39.76205578,0
+-76.99820247,39.76384687,0
+</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_015 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">22877.233</lengthMeters>
+        <description><![CDATA[       FlightLine Number 15 <br>        FlightLine Length 14.22 mi <br>        NumberImages 132 <br> ]]></description>
+        <LineString>
+          <coordinates>-76.99820247,39.76384687,0   -76.73120800,39.76205578,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_016 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">23743.794</lengthMeters>
+        <description><![CDATA[       FlightLine Number 16 <br>        FlightLine Length 14.75 mi <br>        NumberImages 137 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.00836488,39.75854366,0   -76.73127872,39.75669646,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_017 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">24610.356</lengthMeters>
+        <description><![CDATA[       FlightLine Number 17 <br>        FlightLine Length 15.29 mi <br>        NumberImages 143 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.01852572,39.75323959,0   -76.73134945,39.75133713,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_018 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">25476.918</lengthMeters>
+        <description><![CDATA[       FlightLine Number 18 <br>        FlightLine Length 15.83 mi <br>        NumberImages 147 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.02868498,39.74793467,0   -76.73142018,39.74597779,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_019 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">26343.480</lengthMeters>
+        <description><![CDATA[       FlightLine Number 19 <br>        FlightLine Length 16.37 mi <br>        NumberImages 152 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.03884265,39.74262890,0   -76.73149091,39.74061845,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_020 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">27210.042</lengthMeters>
+        <description><![CDATA[       FlightLine Number 20 <br>        FlightLine Length 16.91 mi <br>        NumberImages 158 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.04899875,39.73732227,0   -76.73156165,39.73525911,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_021 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">28076.604</lengthMeters>
+        <description><![CDATA[       FlightLine Number 21 <br>        FlightLine Length 17.45 mi <br>        NumberImages 163 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.05915327,39.73201479,0   -76.73163239,39.72989976,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_022 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">28249.916</lengthMeters>
+        <description><![CDATA[       FlightLine Number 22 <br>        FlightLine Length 17.55 mi <br>        NumberImages 164 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.06122015,39.72666606,0   -76.73170314,39.72454040,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name> FlightlineNumber_023 </name>
+        <styleUrl>#whiteLine</styleUrl>
+        <lengthMeters xmlns="">29116.478</lengthMeters>
+        <description><![CDATA[       FlightLine Number 23 <br>        FlightLine Length 18.09 mi <br>        NumberImages 169 <br> ]]></description>
+        <LineString>
+          <coordinates>-77.07137215,39.72135757,0   -76.73177389,39.71918105,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
