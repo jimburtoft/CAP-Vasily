@@ -15,6 +15,10 @@ The easiest way to use this program is to download the latest .exe from the Rele
 If you want to build from source:
 Install python and create a virtual environment.
 ```
+python3 -m venv VasilyVENV
+.\VasilyVENV\Scripts\activate
+```
+```
 git clone https://github.com/jimburtoft/CAP-Vasily.git
 cd CAP-Vasily
 pip install -r requirements.txt
