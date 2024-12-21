@@ -5,6 +5,8 @@ This application is made to convert .kml files from the Waldo mission planning p
 This application will extract the GPS coordinates of each line in the mission, as well as giving you options to reorder or add additional points that may aid in the flying or tracking of the mission.
 
 Refer to internal documentation for more information about how to use this application.
+Reach out to the PA Wing Director Of Operations with questions.
+
 
 # Instructions
 
