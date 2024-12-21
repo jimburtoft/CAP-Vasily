@@ -84,7 +84,7 @@ def getEndpoint(lat1,lon1,bearing,d):
     lon2 = math.degrees(lon2)
     return lat2,lon2
 
-def add_endpoints(flightlines):
+def add_endpoints(flightlines, distance=0.5):
     """
     Add endpoints to each flightline.
     
@@ -96,8 +96,8 @@ def add_endpoints(flightlines):
     """
     flightlinesnew = []
     for line in flightlines: #from point 1, get the bearing from point 0 to point 1 and add .5NM.  From point 0, get the bearing from point 1 to point 0 and add .5NM
-        point1 = getEndpoint(line[1][0],line[1][1],get_bearing(line[0][0],line[0][1],line[1][0],line[1][1]),0.5)
-        point2 = getEndpoint(line[0][0],line[0][1],get_bearing(line[1][0],line[1][1],line[0][0],line[0][1]),0.5)
+        point1 = getEndpoint(line[1][0],line[1][1],get_bearing(line[0][0],line[0][1],line[1][0],line[1][1]),distance)
+        point2 = getEndpoint(line[0][0],line[0][1],get_bearing(line[1][0],line[1][1],line[0][0],line[0][1]),distance)
         line =  [point2,line[0],line[1],point1]
         flightlinesnew.append(line)
     return flightlinesnew

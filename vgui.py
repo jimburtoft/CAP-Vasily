@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 import PyQt5
 from PyQt5.QtWidgets import (QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QFileDialog, 
                              QLineEdit, QMessageBox, QGroupBox, QRadioButton, QScrollArea, QCheckBox, QInputDialog)
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QDoubleValidator
 from PyQt5.QtCore import Qt
 import webview
 import io
@@ -110,11 +110,23 @@ class ConverterApp(QWidget):
         self.options_group = QGroupBox("Additional Options")
         self.options_group.setVisible(False)
         options_layout = QVBoxLayout()
+        extension_layout = QHBoxLayout()
         self.extension_checkbox = QCheckBox("Extension points")
         self.extension_checkbox.setChecked(True)
         self.keyhole_checkbox = QCheckBox("Keyhole points")
         self.keyhole_checkbox.setChecked(False)
-        options_layout.addWidget(self.extension_checkbox)
+        extension_layout.addWidget(self.extension_checkbox)
+        
+        self.extension_value = QLineEdit()
+        self.extension_value.setText("0.5")
+        self.extension_value.setFixedWidth(60)
+        self.extension_value.setValidator(QDoubleValidator(0.0, 100.0, 2))
+        extension_layout.addWidget(self.extension_value)
+        
+        extension_label = QLabel("nautical miles")
+        extension_layout.addWidget(extension_label)
+        extension_layout.addStretch()
+        options_layout.addLayout(extension_layout)
         options_layout.addWidget(self.keyhole_checkbox)
         self.options_group.setLayout(options_layout)
         scroll_layout.addWidget(self.options_group)
@@ -227,7 +239,8 @@ class ConverterApp(QWidget):
         processed_flightlines = self.flightlines.copy()
 
         if extension_points:
-            processed_flightlines = add_endpoints(processed_flightlines)
+            extension_distance = float(self.extension_value.text())
+            processed_flightlines = add_endpoints(processed_flightlines, extension_distance)
 
         processed_flightlines = flip_rows(processed_flightlines, corner_choice, flip)
 
