@@ -10,6 +10,8 @@ Refer to internal documentation for more information about how to use this appli
 
 The easiest way to use this program is to download the latest .exe from the Releases tab.
 
+[The latest release.](https://github.com/jimburtoft/CAP-Vasily/releases)
+
 If you want to build from source:
 Install python and create a virtual environment.
 ```
